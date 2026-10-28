@@ -1,0 +1,103 @@
+{
+  "dimensoes": [
+    {"id": "matematica", "pergunta": "Qual sua afinidade com Matemática e Estatística?"},
+    {"id": "logica", "pergunta": "Como você avalia seu gosto por Lógica de Programação e Algoritmos?"},
+    {"id": "visual", "pergunta": "Qual seu nível de interesse em Design, Estética e Interfaces Visuais?"},
+    {"id": "infra", "pergunta": "Qual sua afinidade com Infraestrutura, Redes e Servidores?"},
+    {"id": "dados", "pergunta": "O quanto você gosta de manipular, limpar e analisar grandes volumes de Dados?"},
+    {"id": "seguranca", "pergunta": "Qual seu interesse em encontrar vulnerabilidades e focar em Segurança?"},
+    {"id": "negocios", "pergunta": "Como você avalia sua habilidade para Gestão de Projetos e Visão de Negócios?"}
+  ],
+  "trilhas": {
+    "backend": {
+      "nome": "Desenvolvimento Back-end",
+      "pesos_ideais": {"matematica": 3, "logica": 5, "visual": 1, "infra": 4, "dados": 3, "seguranca": 3, "negocios": 2},
+      "roadmap": {
+        "tecnologias": ["Python/Java/C#", "SQL e NoSQL", "Git", "Docker básico", "APIs REST"],
+        "certificacoes": ["AWS Certified Cloud Practitioner", "Opcional: Certificação na Linguagem base"],
+        "portfolio": "Construir uma API RESTful completa com autenticação, banco de dados e testes automatizados."
+      }
+    },
+    "frontend": {
+      "nome": "Desenvolvimento Front-end & UI/UX",
+      "pesos_ideais": {"matematica": 1, "logica": 4, "visual": 5, "infra": 1, "dados": 1, "seguranca": 2, "negocios": 3},
+      "roadmap": {
+        "tecnologias": ["HTML/CSS/JS", "React, Vue ou Angular", "Figma", "Design Responsivo"],
+        "certificacoes": ["Meta Front-End Developer", "Google UX Design"],
+        "portfolio": "Desenvolver o clone de uma interface complexa (ex: Netflix) consumindo uma API pública."
+      }
+    },
+    "data_science": {
+      "nome": "Ciência de Dados e Machine Learning",
+      "pesos_ideais": {"matematica": 5, "logica": 4, "visual": 2, "infra": 2, "dados": 5, "seguranca": 1, "negocios": 4},
+      "roadmap": {
+        "tecnologias": ["Python (Pandas, Scikit-Learn)", "Estatística Aplicada", "Jupyter", "SQL avançado"],
+        "certificacoes": ["IBM Data Science Professional", "TensorFlow Developer"],
+        "portfolio": "Criar um modelo preditivo ponta a ponta utilizando dados do Kaggle e publicar no Streamlit."
+      }
+    },
+    "data_eng": {
+      "nome": "Engenharia de Dados",
+      "pesos_ideais": {"matematica": 3, "logica": 4, "visual": 1, "infra": 4, "dados": 5, "seguranca": 2, "negocios": 2},
+      "roadmap": {
+        "tecnologias": ["Python/Scala", "Spark/Hadoop", "Airflow", "Cloud Data Warehouses", "SQL avançado"],
+        "certificacoes": ["GCP Professional Data Engineer", "AWS Data Analytics"],
+        "portfolio": "Construir um pipeline de ETL automatizado extraindo dados de uma API para um Data Lake."
+      }
+    },
+    "cybersecurity": {
+      "nome": "Cibersegurança (Security / Pentesting)",
+      "pesos_ideais": {"matematica": 3, "logica": 4, "visual": 1, "infra": 5, "dados": 2, "seguranca": 5, "negocios": 2},
+      "roadmap": {
+        "tecnologias": ["Linux/Bash", "Redes (TCP/IP)", "Python (Scripts)", "Ferramentas OWASP"],
+        "certificacoes": ["CompTIA Security+", "CEH (Certified Ethical Hacker)"],
+        "portfolio": "Relatório de pentest em ambientes controlados (CTF - Hack The Box) detalhando vulnerabilidades."
+      }
+    },
+    "devops": {
+      "nome": "DevOps & SRE",
+      "pesos_ideais": {"matematica": 2, "logica": 4, "visual": 1, "infra": 5, "dados": 2, "seguranca": 4, "negocios": 2},
+      "roadmap": {
+        "tecnologias": ["Linux", "Docker & Kubernetes", "CI/CD (GitHub Actions/Jenkins)", "Terraform"],
+        "certificacoes": ["AWS Certified SysOps Administrator", "CKA (Kubernetes Administrator)"],
+        "portfolio": "Implementar uma esteira de CI/CD completa provisionando infraestrutura como código (IaC)."
+      }
+    },
+    "cloud": {
+      "nome": "Computação em Nuvem (Cloud Architecture)",
+      "pesos_ideais": {"matematica": 2, "logica": 3, "visual": 1, "infra": 5, "dados": 3, "seguranca": 4, "negocios": 4},
+      "roadmap": {
+        "tecnologias": ["AWS/Azure/GCP", "Redes e Segurança em Nuvem", "Linux", "Governança FinOps"],
+        "certificacoes": ["AWS Certified Solutions Architect", "Microsoft Certified: Azure Fundamentals"],
+        "portfolio": "Desenhar e documentar a arquitetura escalável e resiliente para um e-commerce em nuvem."
+      }
+    },
+    "mobile": {
+      "nome": "Desenvolvimento Mobile",
+      "pesos_ideais": {"matematica": 1, "logica": 4, "visual": 4, "infra": 2, "dados": 1, "seguranca": 2, "negocios": 3},
+      "roadmap": {
+        "tecnologias": ["Flutter/Dart ou React Native", "Swift/Kotlin básico", "Consumo de APIs", "SQLite"],
+        "certificacoes": ["Google Associate Android Developer"],
+        "portfolio": "Publicar um aplicativo funcional nas lojas (Play Store/App Store) ou repositório de APK."
+      }
+    },
+    "qa": {
+      "nome": "Engenharia de Qualidade e Testes (QA)",
+      "pesos_ideais": {"matematica": 2, "logica": 4, "visual": 2, "infra": 2, "dados": 2, "seguranca": 2, "negocios": 3},
+      "roadmap": {
+        "tecnologias": ["Testes de Software", "Selenium/Cypress", "Postman (APIs)", "Jira/Metodologias Ágeis"],
+        "certificacoes": ["CTFL (ISTQB)"],
+        "portfolio": "Criar um framework de testes automatizados E2E para uma aplicação web pública."
+      }
+    },
+    "product": {
+      "nome": "Gestão de Produtos (Product Management)",
+      "pesos_ideais": {"matematica": 2, "logica": 2, "visual": 3, "infra": 1, "dados": 4, "seguranca": 1, "negocios": 5},
+      "roadmap": {
+        "tecnologias": ["Scrum/Kanban", "Métricas de Produto (KPIs)", "Figma (Prototipação)", "Jira"],
+        "certificacoes": ["PSPO (Professional Scrum Product Owner)"],
+        "portfolio": "Escrever um PRD (Product Requirements Document) completo com backlog priorizado e wireframes."
+      }
+    }
+  }
+}

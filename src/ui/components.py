@@ -1,8 +1,16 @@
 import streamlit as st
+import pandas as pd
 
 
 def exibir_ranking(resultados):
     st.subheader("Top 3 Trilhas Compatíveis")
+
+    df = pd.DataFrame(resultados)
+    df_grafico = df[['nome', 'compatibilidade']].copy()
+    df_grafico.set_index('nome', inplace=True)
+
+    st.bar_chart(df_grafico)
+
     for i, res in enumerate(resultados):
         st.markdown(f"### {i + 1}º {res['nome']} ({res['compatibilidade']}%)")
         st.progress(res['compatibilidade'] / 100.0)

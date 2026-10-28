@@ -1,21 +1,23 @@
-# Consultor Inteligente de Carreiras em TI (Fase 1)
+# Sistema Especialista Inteligente para Mapeamento e Trilha de Carreira em TI
 
-Sistema Especialista baseado em regras desenvolvido em Python para atuar como um consultor de carreiras. O sistema diagnostica e recomenda a trilha de tecnologia mais adequada para o usuário dentre 10 opções possíveis, utilizando um motor de inferência lógica.
+Sistema Especialista Baseado em Regras com Tratamento de Incerteza e Pontuação Ponderada desenvolvido em Python. O sistema atua como um consultor avançado, analisando o perfil multifacetado do usuário, calculando compatibilidade percentual, identificando lacunas de competências (skill gaps) e gerando um roadmap de estudos.
 
 Trabalho acadêmico desenvolvido para o Centro Universitário Presidente Antônio Carlos (UNIPAC Barbacena).
 
-## Funcionalidades
+## Arquitetura e Funcionalidades
 
-* **Entrevista Dinâmica:** Coleta dados do usuário sobre afinidade matemática, preferência de atuação, ferramentas de domínio e tipo de entrega de valor.
-* **Motor de Inferência (Experta):** Base de conhecimento estruturada com regras lógicas de encadeamento para frente (Forward Chaining).
-* **Justificativa Transparente:** Exibe a trilha recomendada acompanhada da regra disparada que justificou a decisão.
-* **Interface Web:** Aplicação interativa desenvolvida com Streamlit.
+O projeto foi refatorado para uma arquitetura modular, separando a base de conhecimento do motor de inferência:
+
+* **Base de Conhecimento Desacoplada (JSON):** Regras, pesos e características das 10 trilhas de TI armazenados externamente em `data/regras_carreiras.json`.
+* **Mecanismo de Ponderação:** Respostas capturadas em escala (1 a 5). O motor (`src/engine.py`) calcula a distância entre o perfil do usuário e o peso ideal de cada trilha.
+* **Skill Gap Analysis:** Módulo (`src/gap_analysis.py`) que cruza as tecnologias já conhecidas pelo usuário com as exigidas pela trilha recomendada.
+* **Interface Wizard (Streamlit):** Navegação multi-etapas guiando o usuário desde os conhecimentos prévios até a visualização de gráficos de barras (gerados via Pandas) com a compatibilidade final.
 
 ## Tecnologias Utilizadas
 
 * Python 3.10+
-* [Experta](https://pypi.org/project/experta/) (Motor de Regras)
-* [Streamlit](https://streamlit.io/) (Interface Gráfica)
+* Pandas (Estruturação de dados e plotagem gráfica)
+* Streamlit (Interface Web interativa)
 
 ## Como Instalar e Executar
 
